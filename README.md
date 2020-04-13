@@ -1,3 +1,4 @@
+```
 # A-simple-example-of-using-SMTP
 
 SMTP-თი სარგებლობის მარტივი მაგალითი 🐍Python 3.7.5✅ -ის გამოყენებით.
@@ -9,3 +10,4 @@ SMTP-თი სარგებლობის მარტივი მაგა
 🔵 smtplib ✅
 🔵 csv ✅
 🔵 time ✅
+```
