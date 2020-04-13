@@ -13,5 +13,5 @@ SMTP-თი სარგებლობის მარტივი მაგა
 🔵 csv ✅
 🔵 time ✅
 
-🌎🌎🌎 Python 3.7 smtplib documentation API link``` https://coinmarketcap.com/ 🌎🌎🌎
-
+🌎🌎🌎 Python 3.7 smtplib documentation API link https://coinmarketcap.com/ 🌎🌎🌎
+```
