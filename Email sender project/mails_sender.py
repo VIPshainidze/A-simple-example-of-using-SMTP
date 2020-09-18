@@ -34,7 +34,7 @@ def main_fun():
     def server_configuration(
             address, password
     ):
-        global sender, server  # ეს დედამოტყნული მოდულის დონის გააქტიურება ვერსად ვერ ვიპოვე თუ როგორ უნდა.
+        global sender, server  # აქ, წესით, სასურველია ფუნგციის გარეთაც შეიქმნას ეს ცვლადი... )
         sender = address
         # სერვერთან წვდომის კონფიგურაცია
         server = SMTP("smtp.gmail.com", 587)
@@ -64,12 +64,12 @@ def main_fun():
 
                 if sent_counter % 40 == 0:
                     if sent_counter == 400 - 1:  # ყოველ 400-ე გაგზავნის ოპერაციაზე ...
-                        sleep(20)  # ... სერვერი "ისვენებს" 20 წამით, რომ დედა არ მაეტყნას.
+                        sleep(20)  # ... სერვერი "ისვენებს" 20 წამით, რომ არ დაიმასქნდეს.
 
                     senders_counter += 1
 
                     if senders_counter <= ln(senders_list) - 1:
-                        # ყოველ 40-ე  ოპერაციაზე მეილი იცვლება რო არ წარმოიშვას error 69* - სერვერის დედის ტყვნა
+                        # ყოველ 40-ე  ოპერაციაზე მეილი იცვლება რო არ წარმოიშვას error 69* - 18+ )) 
                         server_configuration(senders_list[senders_counter], passwords_list[senders_counter])
                     else:  # შესვენების შემდეგ კვლავ ახლიდან უბრუნდება ადრესანტების სიას.
                         senders_counter = 0
